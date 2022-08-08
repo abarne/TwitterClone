@@ -55,7 +55,7 @@ struct LoginView: View {
             Button {
                 print("sign in here")
             } label: {
-                Text("Sign in")
+                Text("Sign In")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(width: 340, height: 50)
