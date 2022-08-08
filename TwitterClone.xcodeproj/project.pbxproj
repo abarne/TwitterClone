@@ -19,6 +19,12 @@
 		842BF7B828A185900048F9FA /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7B728A185900048F9FA /* MessagesView.swift */; };
 		842BF7BC28A1865A0048F9FA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7BB28A1865A0048F9FA /* ProfileView.swift */; };
 		842BF7BE28A18B430048F9FA /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7BD28A18B430048F9FA /* TweetFilterViewModel.swift */; };
+		842BF7C328A1905D0048F9FA /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7C228A1905D0048F9FA /* UserRowView.swift */; };
+		842BF7C828A193590048F9FA /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7C728A193590048F9FA /* SideMenuView.swift */; };
+		842BF7CA28A193650048F9FA /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7C928A193650048F9FA /* SideMenuRowView.swift */; };
+		842BF7CC28A193740048F9FA /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7CB28A193740048F9FA /* SideMenuViewModel.swift */; };
+		842BF7CE28A194E10048F9FA /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF7CD28A194E10048F9FA /* UserStatsView.swift */; };
+		84861E8328A1A04D00FDCDAA /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84861E8228A1A04D00FDCDAA /* SideMenuOptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		842BF7B728A185900048F9FA /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		842BF7BB28A1865A0048F9FA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		842BF7BD28A18B430048F9FA /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
+		842BF7C228A1905D0048F9FA /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		842BF7C728A193590048F9FA /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		842BF7C928A193650048F9FA /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		842BF7CB28A193740048F9FA /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		842BF7CD28A194E10048F9FA /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		84861E8228A1A04D00FDCDAA /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				842BF7A328A1803B0048F9FA /* Components */,
+				842BF7C428A193280048F9FA /* SideMenu */,
 				842BF7B228A185490048F9FA /* Profile */,
 				842BF7B128A185430048F9FA /* Messages */,
 				842BF7B028A1853D0048F9FA /* Notifications */,
@@ -125,6 +138,7 @@
 		842BF7A328A1803B0048F9FA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				842BF7C128A190530048F9FA /* Users */,
 				842BF7A928A181090048F9FA /* Tweets */,
 			);
 			path = Components;
@@ -173,7 +187,8 @@
 		842BF7AF28A185350048F9FA /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				842BF7B328A185640048F9FA /* ExploreView.swift */,
+				842BF7C028A190420048F9FA /* ViewModels */,
+				842BF7BF28A1903A0048F9FA /* Views */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -215,6 +230,57 @@
 			isa = PBXGroup;
 			children = (
 				842BF7BB28A1865A0048F9FA /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		842BF7BF28A1903A0048F9FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				842BF7B328A185640048F9FA /* ExploreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		842BF7C028A190420048F9FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		842BF7C128A190530048F9FA /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				842BF7C228A1905D0048F9FA /* UserRowView.swift */,
+				842BF7CD28A194E10048F9FA /* UserStatsView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		842BF7C428A193280048F9FA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				842BF7C628A193370048F9FA /* Views */,
+				842BF7C528A193320048F9FA /* ViewModel */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		842BF7C528A193320048F9FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				842BF7CB28A193740048F9FA /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		842BF7C628A193370048F9FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				842BF7C728A193590048F9FA /* SideMenuView.swift */,
+				842BF7C928A193650048F9FA /* SideMenuRowView.swift */,
+				84861E8228A1A04D00FDCDAA /* SideMenuOptionRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,13 +358,19 @@
 				842BF7B828A185900048F9FA /* MessagesView.swift in Sources */,
 				842BF7BC28A1865A0048F9FA /* ProfileView.swift in Sources */,
 				842BF79428A17FF60048F9FA /* ContentView.swift in Sources */,
+				842BF7CA28A193650048F9FA /* SideMenuRowView.swift in Sources */,
 				842BF7AB28A181360048F9FA /* TweetRowView.swift in Sources */,
 				842BF7BE28A18B430048F9FA /* TweetFilterViewModel.swift in Sources */,
 				842BF7A828A1809B0048F9FA /* FeedView.swift in Sources */,
+				842BF7C828A193590048F9FA /* SideMenuView.swift in Sources */,
 				842BF79228A17FF60048F9FA /* TwitterCloneApp.swift in Sources */,
 				842BF7B428A185640048F9FA /* ExploreView.swift in Sources */,
+				842BF7CC28A193740048F9FA /* SideMenuViewModel.swift in Sources */,
+				842BF7C328A1905D0048F9FA /* UserRowView.swift in Sources */,
+				84861E8328A1A04D00FDCDAA /* SideMenuOptionRowView.swift in Sources */,
 				842BF7AE28A1848D0048F9FA /* MainTabView.swift in Sources */,
 				842BF7B628A1857A0048F9FA /* NotificationsView.swift in Sources */,
+				842BF7CE28A194E10048F9FA /* UserStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
