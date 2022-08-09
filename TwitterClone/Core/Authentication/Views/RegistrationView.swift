@@ -13,6 +13,8 @@ struct RegistrationView: View {
     @State var userName = ""
     @State var fullName = ""
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
         VStack{
             VStack(alignment: .leading){
@@ -31,16 +33,16 @@ struct RegistrationView: View {
             .clipShape(RoundedShape(corners: [.bottomRight]))
             
             VStack(spacing: 40){
-                CustomInputField(imageName: "envelope", placeholderText: "Email...", text: $email)
-                CustomInputField(imageName: "person", placeholderText: "Username...", text: $userName)
-                CustomInputField(imageName: "person", placeholderText: "Full Name...", text: $fullName)
-                CustomInputField(imageName: "lock", placeholderText: "Password...", text: $password)
+                CustomInputField(imageName: "envelope", placeholderText: "Email...", isSecureField: false, text: $email)
+                CustomInputField(imageName: "person", placeholderText: "Username...", isSecureField: false, text: $userName)
+                CustomInputField(imageName: "person", placeholderText: "Full Name...", isSecureField: false, text: $fullName)
+                CustomInputField(imageName: "lock", placeholderText: "Password...", isSecureField: true, text: $password)
             }
             .padding(.horizontal, 32)
             .padding(.top, 44)
             
             Button {
-                print("sign up here")
+                viewModel.register(withEmail: email, password: password, fullname: fullName, username: userName)
             } label: {
                 Text("Sign Up")
                     .font(.headline)
