@@ -21,6 +21,7 @@ struct TwitterCloneApp: App {
         WindowGroup {
             NavigationView{
                 ContentView()
+              //  ProfilePhotoSelectorView()
             }
             .environmentObject(viewModel)
             
